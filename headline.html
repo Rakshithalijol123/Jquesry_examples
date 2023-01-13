@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="h1">R</h1>
+    <h1 id="h2">A</h1>
+    <h1 id="h3">J</h1>
+    <h1 id="h4">G</h1>
+    <h1 id="h5">L</h1>
+    <h1 id="h6">K</h1>
+    <h1 id="h7">S</h1>
+    <h1 id="h8">H</h1>
+    <h1 id="h9">I</h1>
+    <h1 id="h10">T</h1>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $('h1').hide()
+    $(document).ready(function(){
+        $('#h1').show(200)
+        $('#h2').show(500)
+        $('#h3').show(800)
+        $('#h4').show(1100)
+        $('#h5').show(1400)
+        $('#h6').show(1700)
+        $('#h4').hide(2000)
+        $('#h5').hide(2300)
+        $('#h6').hide(2600)
+    })
+</script>
+</html>

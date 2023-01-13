@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jq4</title>
+    <style>
+        .box{
+            border: 1px solid black;
+            background-color: burlywood;
+            box-shadow: 10px 10px lightgrey;
+            width: 500px;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <button>Slide</button>
+    <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt voluptate cumque ducimus, harum dolorem aperiam amet ratione maxime, illo quia dignissimos sunt deleniti libero sed sequi tenetur tempore nostrum esse.</div>
+    
+    
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+        $('.box').hide()
+        $(document).ready(function(){
+            $('button').click(function(){
+                $('.box').slideToggle(20000)
+            })
+            
+
+        })
+</script>
+</html>

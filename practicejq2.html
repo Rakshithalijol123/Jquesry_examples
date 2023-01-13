@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practicejq2</title>
+    <style>
+        .container {
+
+            float: left;
+        }
+
+        button {
+            margin: 5px;
+        }
+
+        #btn1 {
+            background-color: orange;
+            font-size: 20px;
+            border-radius: 7px;
+            border: none;
+            padding: 10px 10px;
+        }
+
+        #btn2 {
+            background-color: wheat;
+            color: blue;
+            font-size: 20px;
+            border-radius: 7px;
+            border: none;
+            padding: 10px 10px;
+        }
+
+        #btn3 {
+            background-color: green;
+            font-size: 20px;
+            border-radius: 7px;
+            border: none;
+            padding: 10px 10px;
+        }
+
+        .about1 {
+            border: 1px solid black;
+            background-color: cadetblue;
+            box-shadow: 10px 10px lightslategray;
+            width: 400px;
+            height: 100px;
+            margin: 20px;
+            float: left;
+            position: absolute;
+            top: 60px;
+
+        }
+
+        .about2 {
+            border: 1px solid black;
+            background-color: cadetblue;
+            box-shadow: 10px 10px lightslategray;
+            width: 400px;
+            height: 100px;
+            margin: 20px;
+            float: left;
+            position: absolute;
+            top: 60px;
+            left: 450px;
+
+        .mainbox {
+            display: inline;
+            float: left;
+        }
+        #btn1:hover{
+            cursor: pointer;
+
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <button class="button" id="btn1">First</button>
+    <button class="button" id="btn2">Second</button>
+    <button class="button" id="btn3">Both</button>
+    <div class="container">
+        <div class="mainbox">
+            <div class="about1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam obcaecati autem libero
+                corporis non odit pariatur praesentium sed vitae quam?</div>
+            <div class="about2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente sequi laborum minus
+                dolorem alias possimus quasi perspiciatis ratione maxime doloremque quibusdam, ipsam porro deserunt
+                impedit inventore totam aliquam? Accusantium, incidunt!</div>
+        </div>
+    </div>
+
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $('.about1').hide()
+    $('.about2').hide()
+    $(document).ready(function () {
+        $('#btn1').click(function () {
+            $('.about1').slideToggle(2000)
+        })
+        $('#btn2').click(function () {
+            $('.about2').slideToggle(2000)
+        })
+        $('#btn3').click(function () {
+            $('.about1').slideToggle(2000)
+            $('.about2').slideToggle(2000)
+        })
+
+    })
+
+</script>
+
+</html>

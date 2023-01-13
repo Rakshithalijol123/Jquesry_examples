@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabhearders</title>
+    <style>
+        *:focus{
+            outline: none;
+        }
+        .container{
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            
+        }
+        .box1{
+            color: white;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            
+            height: 600px;
+            width: 980px;
+        }
+        .box2{
+            
+            width: 980px;
+            background-color: lightgray;
+        }
+        .button{
+            font-size: 25px;
+            padding: 15px 78px;
+            border: none;
+            background-color: lightgray;
+            
+
+        }
+        .button:hover{
+            cursor: pointer;
+        }
+        #le,#pn,#tj,#on{
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <h1 class="l"><u>LONDON</u></h1>
+            <p class="l" id="le">London is capital city of England</p>
+            <h1 class="p"><u>PARIS</u></h1>
+            <p class="p" id="pn">Paris is capital city of NewYork</p>
+            <h1 class="t"><u>TOKIYO</u></h1>
+            <p class="t" id="tj">Tokiyo is capital city of Japan</p>
+            <h1 class="o"><u>OSLO</u></h1>
+            <p class="o" id="on">Oslo is capital city of Norway</p>
+        </div>
+    <div class="box2">
+        <button class="button" id="btn1">LONDON</button>
+        <button class="button" id="btn2">PARIS</button>
+        <button class="button" id="btn3">TOKIYO</button>
+        <button class="button" id="btn4">OSLO</button>
+    </div>
+    </div>
+    
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $('.l').hide()
+    $('.p').hide()
+    $('.t').hide()
+    $('.o').hide()
+    $(document).ready(function(){
+        $('#btn1').css('background-color' , 'red')
+            $('.box1').css('background-color' , 'red')
+            $('.l').show(500)
+            $('.p').hide()
+            $('.t').hide()
+            $('.o').hide()
+            $('#btn2').css('background-color' , 'lightgrey')
+            $('#btn3').css('background-color' , 'lightgrey')
+            $('#btn4').css('background-color' , 'lightgrey')
+        $('#btn1').click(function(){
+            $('#btn1').css('background-color' , 'red')
+            $('.box1').css('background-color' , 'red')
+            $('.l').show(500)
+            $('.p').hide()
+            $('.t').hide()
+            $('.o').hide()
+            $('#btn2').css('background-color' , 'lightgrey')
+            $('#btn3').css('background-color' , 'lightgrey')
+            $('#btn4').css('background-color' , 'lightgrey')
+        })
+        $('#btn2').click(function(){
+            $('#btn2').css('background-color' , 'green')
+            $('.box1').css('background-color' , 'green')
+            $('.p').show(500)
+            $('.l').hide()
+            $('.t').hide()
+            $('.o').hide()
+            $('#btn1').css('background-color' , 'lightgrey')
+            $('#btn3').css('background-color' , 'lightgrey')
+            $('#btn4').css('background-color' , 'lightgrey')
+        })
+        $('#btn3').click(function(){
+            $('#btn3').css('background-color' , 'blue')
+            $('.box1').css('background-color' , 'blue')
+            $('.t').show(500)
+            $('.p').hide()
+            $('.l').hide()
+            $('.o').hide()
+            $('#btn2').css('background-color' , 'lightgrey')
+            $('#btn1').css('background-color' , 'lightgrey')
+            $('#btn4').css('background-color' , 'lightgrey')
+        })
+        $('#btn4').click(function(){
+            $('#btn4').css('background-color' , 'tomato')
+            $('.box1').css('background-color' , 'tomato')
+            $('.o').show(500)
+            $('.p').hide()
+            $('.t').hide()
+            $('.l').hide()
+            $('#btn2').css('background-color' , 'lightgrey')
+            $('#btn3').css('background-color' , 'lightgrey')
+            $('#btn1').css('background-color' , 'lightgrey')
+        })
+        
+        
+            
+        })
+</script>
+</html>

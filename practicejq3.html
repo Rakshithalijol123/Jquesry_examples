@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parcticejq3</title>
+    <style>
+        *:focus{
+            outline: none;
+        }
+        .button{
+            display: block;
+            font-size: 25px;
+            border: none;
+            border-radius: 5px;
+            
+            
+        }
+        #btn1{
+            padding: 15px 149px;
+        }
+        #btn2{
+            padding: 15px 116px;
+        }
+        #btn3{
+            padding: 15px 142px;
+        }
+        .button:hover{
+            cursor: pointer;
+            background-color: grey;
+            border-radius: 5px;
+        }
+        .box{
+            border: 1px solid black;
+            display: block;
+            height: 100px;
+            width: 600px;
+            box-shadow: 10px 10px gray;
+            background-color: orange;
+        }
+        #box1{
+            position: absolute;
+            top: 68px;
+            background-color: orange;
+        }
+        #box2{
+            position: absolute;
+            top: 127px;
+            background-color: white;
+        }
+        #box3{
+            position: absolute;
+            top: 186px;
+            background-color: green;
+        }
+        #box1 li{
+            color: balck;
+            list-style: none;
+            text-align: center;
+            font-size: 17px;
+        }
+        #box2 li{
+            color: blue;
+            list-style: none;
+            text-align: center;
+            font-size: 17px;
+        }
+        #box3 li{
+            color: black;
+            list-style: none;
+            text-align: center;
+            font-size: 17px;
+        }
+       #box1 li:hover{
+            cursor: pointer;
+            color:white;
+
+        }
+        #box2 li:hover{
+            cursor: pointer;
+            color:darkblue;
+            
+        }
+        #box3 li:hover{
+            cursor: pointer;
+            color:white;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <button class="button" id="btn1">Apps</button>
+    <button class="button" id="btn2">Contact Us</button>
+    <button class="button" id="btn3">E-mail</button>
+    <div class="box" id="box1">
+        <li>INSTAGRAM</li>
+        <li>FACEBOOK</li>
+        <li>WHATSAPP</li>
+        <li>SNAPCHAT</li>
+        <li>YOUTUBE</li>
+        
+
+    </div>
+    <div class="box" id="box2">
+        <li>6362226060</li>
+        <li>8310937902</li>
+        <li>9731272487</li>
+        <li>9686399215</li>
+        <li>8020003001</li>
+
+    </div>
+    <div class="box" id="box3">
+       <li>rakshithalijol9686399215@gmail.com</li>
+       <li>rakeshhalijol@gmail.com</li>
+       <li>visualstudiocode@gmail.com</li>
+       <li>rakshithalijol123@gmail.com</li>
+       <li>rakeshhalijol985@gmail.com</li>
+
+
+    </div>
+
+    
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $('#box1').hide()
+    $('#box2').hide()
+    $('#box3').hide()
+    $(document).ready(function(){
+        $('#btn1').click(function(){
+            $('#box2').hide(200)
+            $('#box3').hide(200)
+            $('#box1').slideToggle(1000)
+        })
+        $('#btn2').click(function(){
+            $('#box1').hide(200)
+            $('#box3').hide(200)
+            $('#box2').slideToggle(1000)
+        })
+        $('#btn3').click(function(){
+            $('#box2').hide(200)
+            $('#box1').hide(200)
+            $('#box3').slideToggle(1000)
+        })
+    })
+</script>
+</html>

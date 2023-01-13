@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practicejq4</title>
+    <style>
+        *:focus{
+            outline: none;
+        }
+        .button{
+            display: flex;
+            flex-flow: column wrap;
+            font-size: 35px;
+            border-radius: 5px;
+            border: none;
+            
+        }
+        .box{
+            border: 1px solid black;
+            width: 499px;
+            background-color: burlywood;
+            margin: 1px;
+            box-shadow: 10px 10px lightgray;
+            border-radius: 5px;
+        }
+        #btn1{
+            padding: 10px 200px;;
+        }
+        #btn2{
+            padding: 10px 176px;
+        }
+        #btn3{
+            padding: 10px 198px;
+        }
+        .button:hover{
+            cursor: pointer;
+            background-color: grey;
+            border-radius: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <button class="button" id="btn1">FIRST</button>
+    <div class="box" id="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, repellat? Nobis officiis hic molestias perferendis, neque autem incidunt consequuntur earum repellendus! Perspiciatis temporibus tempore explicabo sunt autem molestias, ducimus nisi quis, itaque voluptates aspernatur nobis excepturi at corrupti qui eum.</div>
+    <button class="button" id="btn2">SECOND</button>
+    <div class="box" id="box2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse soluta qui ex sapiente, officiis dolorum nostrum dignissimos velit tenetur autem corporis quasi perferendis! Quod nobis est sed, illum quos veritatis fugiat, tempore inventore vero dolore at, saepe incidunt esse laborum!</div>
+    <button class="button" id="btn3">THIRD</button>
+    <div class="box" id="box3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, earum quam distinctio aut dignissimos eveniet itaque incidunt laborum corporis perferendis nisi natus, rerum vitae officiis porro reiciendis? Incidunt dolore esse veniam, vero, enim sapiente sit labore modi, distinctio iure laborum.</div>
+    
+    
+    
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $('.box').hide()
+   
+    
+
+
+    $(document).ready(function(){
+        $('#btn1').mouseenter(function(){
+            $('#box2').hide(70)
+            $('#box3').hide(70)
+
+            $('#box1').slideToggle(200)
+        })
+        $('#btn2').mouseenter(function(){
+            $('#box1').hide(70)
+            $('#box3').hide(70)
+            $('#box2').slideToggle(200)
+        })
+        $('#btn3').mouseenter(function(){
+            $('#box2').hide(70)
+            $('#box1').hide(70)
+            $('#box3').slideToggle(200)
+        })
+    })
+       
+            
+    
+</script>
+</html>

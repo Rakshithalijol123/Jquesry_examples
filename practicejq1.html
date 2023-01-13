@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 50px;
+
+        }
+
+        .btn1 {
+            margin: 100px;
+        }
+
+        .square {
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            display: inline-block;
+            position: absolute;
+            top: 160px;
+            left: 88px;
+        }
+
+        .circle {
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            display: inline-block;
+            position: absolute;
+            top: 160px;
+            left: 245px;
+            border-radius: 50%;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button class="btn1">Square</button>
+        <button class="btn2">Circle</button>
+        <div class="square"></div>
+        <div class="circle"></div>
+
+
+
+    </div>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $('.square').hide()
+    $('.circle').hide()
+    $(document).ready(function(){
+        $('.btn1').click(function(){
+            $('.square').toggle(2000)
+        })
+        $('.btn2').click(function(){
+            $('.circle').toggle(2000)
+        })
+    })
+
+</script>
+
+</html>

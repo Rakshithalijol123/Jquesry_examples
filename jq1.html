@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quo deleniti nemo facere corporis ratione quibusdam sed repellendus ipsum ut quis iste, voluptatem ipsam corrupti fugit saepe eveniet. Facere, eum?</p>
+    <button>click</button>
+    
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $('p').hide()
+    $(document).ready(function(){
+        $('button').click(function(){
+            $('p').toggle(3000)
+        })
+    })
+    
+</script>
+
+</html>

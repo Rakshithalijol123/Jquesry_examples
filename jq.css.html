@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.css property in jquery</title>
+    <style>
+        button{
+            background-color: crimson;
+            border: none;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <button>Red</button>
+    
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('button').click(function(){
+            $('button').css('background-color' , 'blue',2000)
+            $('button').css('padding' , '8px 20px')
+            
+        })
+    })
+</script>
+
+</html>
